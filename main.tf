@@ -4,6 +4,7 @@ locals {
   s3_bucket_namespace   = join("-", [var.org_name, var.team_name, var.project_id, var.env["dev"]])
 }
 data "aws_caller_identity" "current" {}
+
 module "codepipeline" {
   source                 = "./modules/codepipeline"
   general_namespace      = local.general_namespace

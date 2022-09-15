@@ -1,7 +1,7 @@
-org_name   = "cognizant"
-team_name  = "revature"
-project_id = "2022"
-region     = ""
+org_name   = "revature"
+team_name  = "cognizant"
+project_id = "joserivaslab"
+region     = "us-east-1"
 env = {
   "dev" = "dev"
   "qa"  = "qa"

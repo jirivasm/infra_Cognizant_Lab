@@ -2,14 +2,24 @@
 variable "org_name" {
   description = "Your Organization name"
   type        = string
+  default = "Cognizant"
 }
 variable "team_name" {
   description = "Your Team name"
   type        = string
+  default = "jirivasm"
 }
 variable "project_id" {
   description = "Your Project ID"
   type        = string
+  default = "lab-interview"
+}
+variable "env" {
+  description = "Your deployment environment"
+  type        = map(any)
+  default = {
+    "dev" = "dev"
+  }
 }
 variable "region" {
   description = "Your AWS Region"
